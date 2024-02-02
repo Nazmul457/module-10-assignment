@@ -66,7 +66,7 @@ const server = http.createServer(function (req, res) {
                     res.write('Error uploading file');
                 } else {
                     res.writeHead(200, { 'Content-Type': 'text/plain' });
-                    res.write('File uploaded successfully');
+                    res.write('<h1>File uploaded successfully</h1>');
                 }
                 res.end();
             });
